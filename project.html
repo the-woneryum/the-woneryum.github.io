@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <title>Project details — WONEX SOFTWARE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-wrap{padding-block:70px 110px;min-height:70vh}.back-link{font:10px "DM Mono";color:var(--gold2)}.detail-hero{padding:35px 0 30px;border-bottom:1px solid var(--line)}.detail-hero h1{font-size:clamp(36px,6vw,62px);letter-spacing:-.06em;line-height:1.1;margin:14px 0}.detail-description{color:#a8afc1;max-width:760px}.detail-meta{display:flex;gap:18px;flex-wrap:wrap;color:#9aa2b4;font:10px "DM Mono";margin-top:20px}.detail-columns{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:38px;margin-top:38px}.readme{min-width:0;color:#c6cada;line-height:1.8}.readme h1,.readme h2,.readme h3{color:#f1d77e;line-height:1.25;margin-top:1.8em}.readme h1{font-size:28px}.readme h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:9px}.readme h3{font-size:17px}.readme a{color:#f0ce5e;text-decoration:underline}.readme pre{overflow:auto;padding:16px;background:#050609;border:1px solid var(--line);border-radius:9px}.readme code{font-family:"DM Mono",monospace;font-size:.9em}.readme :not(pre)>code{background:#ffffff12;padding:2px 5px;border-radius:4px}.readme img{max-width:100%;height:auto}.readme table{display:block;overflow:auto;border-collapse:collapse}.readme td,.readme th{border:1px solid var(--line);padding:8px}.readme blockquote{border-left:2px solid var(--gold);padding-left:15px;color:#9da5b6;margin-left:0}.side-card{align-self:start;position:sticky;top:25px;padding:20px;background:#111319;border:1px solid var(--line);border-radius:12px}.side-card h3{font-size:13px;margin:0 0 15px}.side-card p{font-size:11px;color:#9ba3b7;overflow-wrap:anywhere}.side-card .button{width:100%;justify-content:center;margin-top:10px}.detail-state{padding:45px 0;color:#aab1c2}@media(max-width:760px){.detail-columns{grid-template-columns:1fr}.side-card{position:static;order:-1}}
+  </style>
+</head>
+<body>
+  <div class="noise"></div><div class="ambient ambient-one"></div>
+  <header class="topbar wrap"><a class="brand" href="index.html"><span class="brand-mark">W</span><span>WONEX<span class="muted"> SOFTWARE</span></span></a><a class="top-link" href="https://github.com/the-woneryum" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></header>
+  <main class="wrap detail-wrap">
+    <a class="back-link" href="index.html#projects">← BACK TO PORTFOLIO</a>
+    <div id="detailState" class="detail-state">Loading repository details from GitHub…</div>
+    <section id="projectDetail" hidden>
+      <div class="detail-hero"><p class="eyebrow">GITHUB REPOSITORY / PROJECT OVERVIEW</p><h1 id="repoName"></h1><p class="detail-description" id="repoDescription"></p><div class="detail-meta" id="repoMeta"></div></div>
+      <div class="detail-columns">
+        <article class="readme" id="readmeContent"><h2>README</h2><p>Loading documentation…</p></article>
+        <aside class="side-card"><h3>Repository information</h3><p id="repoLanguage"></p><p id="repoLicense"></p><p id="repoUpdated"></p><p id="repoClone"></p><a class="button primary" id="repoSource" href="#" target="_blank" rel="noopener noreferrer">VIEW SOURCE ↗</a><a class="button secondary" id="repoIssues" href="#" target="_blank" rel="noopener noreferrer">ISSUES ↗</a></aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-mark">W</span><span>WONEX<span class="muted"> SOFTWARE</span></span></a><span>© <span id="year"></span> WONEX SOFTWARE</span><a href="index.html">Portfolio home ↑</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>
